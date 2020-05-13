@@ -15,7 +15,7 @@
 
   With the given approach we could use the API Gateway as an abstraction to other services we may want to build. We could also swap out our lambdas for containerized apis built on a different stack if we wish.
 
-  Using a serverless approach helps us will the scalling concern for unknown periods of time when we may have spikes in requests. This architecture has a few case studies done to prove the benefit of serverless and cloud native systems. 
+  Using a serverless approach helps us with the scalling concern for unknown periods of time when we may have spikes in requests. This architecture has a few case studies done to prove the benefit of serverless and cloud native systems. 
  
  ### CICD
  An example cicd pipeline (circle ci) has been provided to automate the deploments of our API. 
