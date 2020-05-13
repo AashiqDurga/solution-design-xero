@@ -1,17 +1,17 @@
 # Overview
- The web api will be developed based on the [contract](flight-api-spec.yml) supplied in this repo. The Contract follows an OpenAPI 3.0 Spec which serves as the consumers documention and can also be used to define the AWS API Gatewaty resouce endpoints for which applications will interact with. 
+ The web api will be developed based on the [contract](flight-api-spec.yml) supplied in this repo. The Contract follows an OpenAPI 3.0 Spec which serves as the consumers documention and can also be used to define the AWS API Gateway resouce endpoints for which applications will interact with. 
 
  I have choosen to use one api at this point for both mobile clients and digital information boards.
 
  You can view the hosted contract [here](https://app.swaggerhub.com/apis/AashiqDurga/flight-api/1.0)
 
  ## Technology
- Given the scope of this application a simple serverless archicture can be used to leverage both low costs and scalability provided by AWS. 
+ Given the scope of this application a simple serverless architecture can be used to leverage both low costs and scalability provided by AWS. 
 
  ### API
-  Serverless cli was used to create the [example](flight-api) application that has been provided. The specific AWS Lambda functions are written in Node with TypeScript.
+  [Serverless Cli](https://www.serverless.com/) was used to create the [example](flight-api) application that has been provided. The specific AWS Lambda functions are written in NodeJS with TypeScript.
 
-  Nodejs is a widely used technology with a ecosystem that can be made easily available to any local environment or cloud. To get going quickly with serverless it is a good choice as there is a wide community support if any issues may be faced while developing the system. 
+  NodeJS is a widely used technology with a ecosystem that can be made easily available to any local or cloud environment. To get going quickly with serverless it is a good choice as there is a wide community support if any issues may be faced while developing the system. 
 
   With the given approach we could use the API Gateway as an abstraction to other services we may want to build. We could also swap out our lambdas for containerized apis built on a different stack if we wish.
 
@@ -19,14 +19,20 @@
  
  ### CICD
  An example cicd pipeline (circle ci) has been provided to automate the deploments of our API. 
- This allows us to contiuously intergrate and get feedback from our system be it running unit tests or  publishing it to a staging environment for test apps and displays to consume.
+ This allows us to continuously intergrate and get feedback from our system be it running unit tests or  publishing it to a staging environment for test apps and displays to consume.
 
  ### Database
  DynamoDB will be used as our datastore to keep things simple by leverageing managed services in AWS. 
- We could also use an RDS (MS Sql Server) as I have provided an example data structure. I dont think we need a relational store for this as their if some additional overhead with it. Dynamo db provides easy to consume sdks for a nodejs application and requires no setup as we will do this via Serverles-Cli initialization. 
+ We could also use an RDS (MS Sql Server) as I have provided an example data structure. 
+ 
+ I dont think we need a relational store for this as there is some additional overhead to deal with it. 
+ 
+ Dynamo db provides easy to consume sdks for a nodejs application and requires no setup as we will do this via Serverles Cli initialization. 
 
  #### Data Model
 The data model can be represented simple as a json object given a NoSql database will be used in this design.
+
+The flight-api-example has TS models defined.
 
 Flight
 ```
