@@ -11,6 +11,8 @@
  ### API
   Serverless cli was used to create the [example](flight-api) application that has been provided. The specific AWS Lambda functions are written in Node with TypeScript.
 
+  Nodejs is a widely used technology with a ecosystem that can be made easily available to any local environment or cloud. To get going quickly with serverless it is a good choice as there is a wide community support if any issues may be faced while developing the system. 
+
   With the given approach we could use the API Gateway as an abstraction to other services we may want to build. We could also swap out our lambdas for containerized apis built on a different stack if we wish.
 
   Using a serverless approach helps us will the scalling concern for unknown periods of time when we may have spikes in requests. This architecture has a few case studies done to prove the benefit of serverless and cloud native systems. 
@@ -20,8 +22,8 @@
  This allows us to contiuously intergrate and get feedback from our system be it running unit tests or  publishing it to a staging environment for test apps and displays to consume.
 
  ### Database
- DynamoDB will be used as our datastore to keep things simple by leverageing managed services in AWS.
- We could also use an RDS (MS Sql Server) as I have provided an example data structure. 
+ DynamoDB will be used as our datastore to keep things simple by leverageing managed services in AWS. 
+ We could also use an RDS (MS Sql Server) as I have provided an example data structure. I dont think we need a relational store for this as their if some additional overhead with it. Dynamo db provides easy to consume sdks for a nodejs application and requires no setup as we will do this via Serverles-Cli initialization. 
 
  #### Data Model
 The data model can be represented simple as a json object given a NoSql database will be used in this design.

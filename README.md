@@ -6,6 +6,8 @@ Thank you for taking the time to got through this solution design, below are a f
 * I have grouped sections into folders that have README files going in to a bit more detail about the section.
 * There are links to sections as you read that will take you to files or directories. I suggest reading through this entire page first before clicking through so you don't loose context. 
 * Everything has been done in markdown so GitHub may be the best place to view this. Alternatively you can clone this repo and explore in your favourite editor.
+* There a possibly some areas that I have not gone into much detail about or have totally not concidered.
+* Your feedback is welcome.
 
 
 ## Context :small_airplane:
@@ -33,3 +35,8 @@ Airlines will be able to independently update the information about the schedule
 * Existing flight infomation needs to be imported but that ETL process is out of scope.
 * Message board is polling the web-api for data. 
 * The provided *example*  code for the web api is not perfect and serves purely as an indication of how the tools and technology could be used
+* Current way of of ensuring airlines dont change the wrong data is not the best but it will work. 
+
+# Timeline Forcast
+ 
+ Given a cross funtional team of an approximate size of 5 the above solution can be devloped in 1 - 2 weeks or less. This implies that teams slice the work into verticle pieces of product value that can continously be deployed and  working in a Test first manner using practices like TDD and involving QA from the beginning.  Forcasting is taking into consideration any interaptins and meetings teams will have to work through to get the product into a custumers hands and get feedback. 
