@@ -32,4 +32,4 @@ Airlines will be able to independently update the information about the schedule
 * Details of the mobile application for users is out of scope.
 * Existing flight infomation needs to be imported but that ETL process is out of scope.
 * Message board is polling the web-api for data. 
-* The provided *example*  code for the web api is not perfect adn serves purely as an indication of how the tools and technology could be used
+* The provided *example*  code for the web api is not perfect and serves purely as an indication of how the tools and technology could be used
