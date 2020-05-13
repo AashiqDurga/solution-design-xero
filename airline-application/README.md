@@ -10,7 +10,7 @@ A front-end client application built in react and Typescript using `npx create-r
 ## Web API
  The web api will be developed based on the [contract](airline-api-spec.yml) supplied in this repo. The Contract follows an OpenAPI 3.0 Spec which serves as the consumers documention and can also be used to define the AWS API Gateway resource endpoints for which the client react application will interact with. 
 
- You can view the hosted contract [here](https://app.swaggerhub.com/apis/AashiqDurga/airline-api/1.0)
+ You can view the hosted contract <a href="https://app.swaggerhub.com/apis/AashiqDurga/airline-api/1.0" target="_blank">here</a>
 
  ## Technology
  Given the scope of this application a we can build on the serverless architecture being used by the web-api. 

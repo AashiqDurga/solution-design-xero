@@ -3,7 +3,7 @@
 
  I have choosen to use one api at this point for both mobile clients and digital information boards.
 
- You can view the hosted contract [here](https://app.swaggerhub.com/apis/AashiqDurga/flight-api/1.0)
+ You can view the hosted contract <a href="https://app.swaggerhub.com/apis/AashiqDurga/flight-api/1.0" target="_blank">here</a>
 
  ## Technology
  Given the scope of this application a simple serverless architecture can be used to leverage both low costs and scalability provided by AWS. 
