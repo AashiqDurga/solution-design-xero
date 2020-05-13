@@ -1,4 +1,4 @@
-# Web API
+# Overview
  The web api will be developed based on the [contract](flight-api-spec.yml) supplied in this repo. The Contract follows an OpenAPI 3.0 Spec which serves as the consumers documention and can also be used to define the AWS API Gatewaty resouce endpoints for which applications will interact with. 
 
  I have choosen to use one api at this point for both mobile clients and digital information boards.
@@ -12,10 +12,12 @@
   Serverless cli was used to create the [example](flight-api) application that has been provided. The specific AWS Lambda functions are written in Node with TypeScript.
 
   With the given approach we could use the API Gateway as an abstraction to other services we may want to build. We could also swap out our lambdas for containerized apis built on a different stack if we wish.
+
+  Using a serverless approach helps us will the scalling concern for unknown periods of time when we may have spikes in requests. This architecture has a few case studies done to prove the benefit of serverless and cloud native systems. 
  
  ### CICD
  An example cicd pipeline (circle ci) has been provided to automate the deploments of our API. 
- This allows us to contiuously intergrate and get feedback from our system be it running unit tests or  publishing it to a staging environment for dummy apps and displays to consume.
+ This allows us to contiuously intergrate and get feedback from our system be it running unit tests or  publishing it to a staging environment for test apps and displays to consume.
 
  ### Database
  DynamoDB will be used as our datastore to keep things simple by leverageing managed services in AWS.
@@ -39,7 +41,7 @@ Flight
 
 } 
 ```
-Subcription
+Subscription
 ```
 {
     "id":"ff23afac-81c8-4395-9f4b-bdb1236d0b38",
