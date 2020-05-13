@@ -15,7 +15,7 @@ All services required are provided by AWS and will be built, maintained and supp
 * Cloud watch
 
 ### Infrastructure as Code
-Having the infrastructure as code and in a git repo has the benefits of being version controlled and making sure we have the same resource configuration across different environments. Deployment of all cloud resources can be done using Cloud formation or an alternative called Terraform which aids in cross cloud resource definitions. 
+Having the infrastructure as code and in a git repo has the benefits of being version controlled and making sure we have the same resource configuration across different environments. Deployment of all cloud resources can be done using Cloud formation or an alternative like Terraform which aids in cross cloud resource definitions. 
 
 ### Infrastructure Diagram
 The below diagram is an example of what the first iteration of the infrastructure would look like. 
