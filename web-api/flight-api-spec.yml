@@ -15,7 +15,7 @@ servers:
     description: Development server
 
 paths:
-  /Flight:
+  /flight:
     get:
       tags:
         - Flight
@@ -36,9 +36,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/FlightResponse'
+                $ref: "#/components/schemas/FlightsResponse"
 
-  /Flight/{flightId}:
+  /flight/{flightId}:
     get:
       tags:
         - Flight
@@ -62,11 +62,37 @@ paths:
           example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
       responses:
         200:
-          description: MenuItems Response
+          description: Flights Response
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/FlightResponse'
+                $ref: "#/components/schemas/FlightResponse"
+
+  /flight/{flightId}/subscribe:
+    post:
+      tags:
+        - Flight
+      summary: " Subscribes a user to flight"
+      description: " Subscribes a user to notifications for a specific flight"
+      operationId: postSubscribe
+      parameters:
+        - name: flightId
+          in: path
+          description: "The id associated to the flight"
+          required: true
+          schema:
+            type: string
+          example: "2532eba0-7b39-4440-9ca1-b319ec27331c"
+        - name: Authorization
+          in: header
+          description: "The JWT access token associated to the user or display board"
+          required: true
+          schema:
+            type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      responses:
+        200:
+          description: Flight Response
 
 components:
   schemas:
@@ -109,24 +135,24 @@ components:
       title: flight
       type: object
       properties:
-          id:
-            type: string
-          airline:
-            type: string
-          flightNumber:
-            type: string
-          destination:
-            type: string
-          scheduledDepartureTime:
-            type: string
-          estimateDepartureTime:
-            type: string
-          actualDepartureTime:
-            type: string
-          status:
-            type: string
-          depatureGate:
-            type: string
+        id:
+          type: string
+        airline:
+          type: string
+        flightNumber:
+          type: string
+        destination:
+          type: string
+        scheduledDepartureTime:
+          type: string
+        estimateDepartureTime:
+          type: string
+        actualDepartureTime:
+          type: string
+        status:
+          type: string
+        depatureGate:
+          type: string
       example:
         - id: 9a4a5eb6-2428-40b0-8ef6-f05d132d0f95
           airline: "Air New Zealand"
