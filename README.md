@@ -37,6 +37,6 @@ Airlines will be able to independently update the information about the schedule
 * The provided *example*  code for the web api is not perfect and serves purely as an indication of how the tools and technology could be used.
 * Current way of of ensuring airlines don't change the wrong data is not the best but it will work. 
 
-# Timeline Forcast
+# Timeline Forcast 🕥
  
  Given a cross funtional team of an approximate size of 5 the above solution can be devloped in 1 - 2 weeks. This implies that team slice's the work into verticle pieces of product value that can continuosly be deployed. Working in a Test First manner using practices like TDD and involving QA from the beginning will be prefered.  Forcasting is taking into consideration any interaptions and meetings teams will have to work through to get the product into a custumers hands and get feedback. 
