@@ -21,7 +21,7 @@ Airlines will be able to independently update the information about the schedule
 
 ![high-level-context](high-level-context.jpg)
 
-# System Components 🔺
+# System Components 🔺 :black_medium_small_square: ⚪️
 
 * [Web API for display board and Mobile devices](web-api/README.md)
 * [Application for airline staff](airline-application/README.md)
