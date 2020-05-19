@@ -9,7 +9,7 @@
  Given the scope of this application a simple serverless architecture can be used to leverage both low costs and scalability provided by AWS. 
 
  ### API
-  [Serverless Cli](https://www.serverless.com/) was used to create the [example](flight-api) application that has been provided. The specific AWS Lambda functions are written in NodeJS with TypeScript.
+  [Serverless Cli](https://www.serverless.com/) was used to create the [example](flight-api-example) application that has been provided. The specific AWS Lambda functions are written in NodeJS with TypeScript.
 
   NodeJS is a widely used technology with a ecosystem that can be made easily available to any local or cloud environment. To get going quickly with serverless it is a good choice as there is a wide community support if any issues may be faced while developing the system. 
 
