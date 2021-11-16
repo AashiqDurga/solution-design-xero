@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@types/uuid": "^7.0.2",
-    "aws-sdk": "^2.653.0",
+    "aws-sdk": "^2.814.0",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
